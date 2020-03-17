@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // カウントデータ
     int count = 0;
 
     @Override
@@ -22,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
-                // カウントの加算
                 count++;
                 ((TextView)findViewById(R.id.count)).setText("" + count);
         }
